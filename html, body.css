@@ -1,0 +1,455 @@
+html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  ul, ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  a, a:hover, a:focus {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container {
+    width: 85%;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  header{
+      position: fixed;
+      width: 100%;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: #222;
+  }
+  h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+  section{
+    padding: 100px 0px;
+  }
+  .clearfix::after{
+    content: " ";
+    display: block;/*或是 table*/
+    clear: both;
+  }
+/* =  =  =  =  =   = header =  =  =  =  =  = */
+ 
+#logo{
+    float: left;
+  }
+   #logo img{
+    width: 80px;
+    height: 40px;
+  } 
+  .nav{
+      float: right;
+    
+  }
+  .nav li{
+    display: inline-block;
+  }
+  .nav li a{
+      color: #fff;
+      text-transform:capitalize;
+      display: block;
+      padding: 10px 12px 7px;
+  }
+  .nav li a:hover{
+    border-bottom: 3px solid #0099ff;
+  }
+  
+  
+
+  /* =  =  =  =  =  home =  =  =  =  =  =  = */
+  
+  .home_bg{
+      background-image: url(https://picsum.photos/200/300);
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
+  }
+  .overlay{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container_table{
+      display: table;
+      width: 100%;
+      height: 100%;
+      position: relative;
+  }
+  .container_table_cell{
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+  }
+  .container_table_cell h2{
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+  }
+  .social_icons a{
+    display: inline-block;
+    font-size: 19px;
+    width: 30px;
+    height: 40px;
+    line-height: 40px; 
+    color: #fff;
+    margin: 7px;
+  }
+
+  /* =========== a bout me ===========  */
+
+  h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 2px;
+  }
+  .col-left , .col-right{
+    float: left;
+    width: 50%;
+    padding: 0px 15px;
+  }
+  /* .col-left img{
+    background-size:contain;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  } */
+  .prosonal-info h3{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+  }
+.prosonal-info p{
+  line-height: 24px;
+  text-align: justify;
+  color: #767676;
+}
+.skill{
+  margin: 30px auto;
+}
+.skill li{
+  font-size: 15px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+.buttom-group .download_cv,.hire_me{
+  display: inline-block;
+
+}
+.download_cv,.hire_me{
+  margin-right: 18px;
+}
+.buttom-group a{
+  display: block;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px 38px;
+  color: #000;
+  text-transform: capitalize;
+}
+.buttom-group a:hover{
+  background-color: #000;
+  color: #fff;
+  transition: all .4s linear;
+}
+.clearfix::after{
+  content: " ";
+  display: block;/*或是 table*/
+  clear: both;
+}
+
+/* <!-- = = = = my service = = = = --> */
+
+.my-service{
+  background-color: #f9f9f9;
+}
+.service-content{
+  float: left;
+  width: 33.33333333%;
+  padding:0px 15px;
+}
+.service-content i{
+  font-size: 30px;
+  line-height: 46px;
+}
+.service-content h3{
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 13px 0px 8px 0px;
+  text-transform: capitalize;
+}
+.service-content p{
+  color: #767676;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* <!-- = = = = resume = = = = --> */
+.col-horizontal{
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000;
+}
+.col-horizontal:last-child{
+  border-bottom: 0;
+}
+/* ------上面這個last-child要查------- */
+h3.resume-subtitle {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+ .col-horizontal .col-item{
+  float: left;
+  width: 50%;
+  padding: 0px 15px;
+}
+.experience-year{
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0px 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.resumr-detail h4{
+  /* letter-spacing: 1px; */
+  /* padding: 15px 0px 5px 0px; */
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+.resumr-detail h6{
+  /* padding-bottom: 8px; */
+  font-size: 12px;
+  margin-bottom: 9px;
+  text-transform: capitalize;
+}
+.resumr-detail p{
+  color: #767676;
+  line-height: 22px;
+}
+/* <!-- = = = = = = quotes = = = = =  --> */
+.quotes{
+  background-image: url(https://picsum.photos/200/600);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+}
+.container{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.quote-inner{
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+ color: #fff;
+}
+.quote-inner h3{
+  text-transform: capitalize;
+  font-size: 30px;
+
+}
+.quote-inner p{
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.quote-inner a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 10px 25px;
+  letter-spacing: 3px;
+}
+/* = = = = = works = = = = = */
+.works{
+  background-color: #f7f7f7;
+}
+.col-work{
+  float: left;
+  width: 33.3333333333%;
+  padding: 0px 15px;
+}
+.col-work a{
+  display: block;
+  margin-bottom: 14px;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+.col-work a:hover{
+  box-shadow: 0px 16px 22px 0px rgba(90,91,95,0.3);
+  top: -5px;
+}
+/* = = = = = get in touch = = = = = = */
+.contact-form{
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-form .form-input:first-child,.contact-form .form-input:nth-child(2){
+  float: left;
+  width: 50%;
+  padding: 0px 15px;
+}
+
+.contact-form .form-input:nth-child(3){
+  width: 100%;
+  padding: 0px 15px;
+}
+.contact-form input.form-style{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  text-transform: capitalize;
+  padding-bottom: 19px;
+  margin-bottom: 12px;
+  outline: none;
+}
+.contact-form textarea{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+}
+.form-submit{
+  text-align: left;
+  padding: 0px 15px;
+}
+.form-submit input{
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 15px 60px;
+  margin: 16px 14px 0px 0px;
+  cursor : pointer ;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+.form-submit input:hover{
+  background-color: #000;
+  color: #fff;
+}
+/* <!-- = = = = = footer = = = = =  --> */
+#footer{
+  background-color: #000;
+  padding: 80px 0px;
+}
+.footer-content{
+  text-align: center;
+  vertical-align: middle;
+}
+.footer-content p{
+  color: #fff;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+.footer-content a{
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin:10px;
+  
+}
+.footer-content a i{
+ padding: 10px;
+ -webkit-transition: .4s linear;
+  -moz-transition: .4s linear;
+  -ms-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition:   .4s linear;
+  border-radius: 50%;
+}
+.footer-content  a .fa-facebook{
+  padding: 9px 12px;
+}
+.footer-content i:hover{
+  position: relative;
+  top: -3px;
+}
+.footer-content  a  .fa-twitter:hover{
+  background-color: #3399cc;
+}
+.footer-content  a .fa-facebook:hover{
+  background-color: #336699;
+}
+.footer-content  a .fa-github-alt:hover{
+  background-color: #66cc66;
+}
+.footer-content  a .fa-skype:hover{
+  background-color: #0099ff;
+}
+.footer-content  a .fa-instagram:hover{
+  background:linear-gradient(#6633cc,#ff3399);
+}
